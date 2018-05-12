@@ -1,37 +1,37 @@
 # Eslint-Airbnb-Conf
 Konfiguracja eslint
+```json
+// install the following packages:
+// npm info "eslint-config-airbnb@latest" peerDependencies
+// yarn add --dev prettier eslint-config-prettier eslint-plugin-prettier babel-eslint
+//  (
+//    export PKG=eslint-config-airbnb;
+//    npm info "$PKG@latest" peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+//  )
 
-// install the following packages: <br />
-// npm info "eslint-config-airbnb@latest" peerDependencies <br />
-// yarn add --dev prettier eslint-config-prettier eslint-plugin-prettier babel-eslint <br />
-//  ( <br />
-//    export PKG=eslint-config-airbnb; <br />
-//    npm info "$PKG@latest" peerDependencies --json | command sed 's/[{},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest" <br />
-//  ) <br />
- <br />
- <br />
-{ <br />
-  "extends": ["airbnb", "prettier", "prettier/react"], <br />
-  "plugins": ["prettier"], <br />
-  "parser": "babel-eslint", <br />
-  "parserOptions": { <br />
-    "ecmaVersion": 2016, <br />
-    "sourceType": "module" <br />
-  }, <br />
-  "env": { <br />
-    "es6": true, <br />
-    "browser": true, <br />
-    "node": true <br />
-  }, <br />
-  "rules": { <br />
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], <br />
-    "jsx-a11y/anchor-is-valid\": [ "error", <br />
-      { <br />
-    		"components": ["Link"], <br />
-    		"specialLink": ["to"], <br />
-    		"aspects": ["noHref", "invalidHref", "preferButton"] <br />
-      } <br />
-    ] <br />
-  } <br />
-} <br />
- <br />
+
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/anchor-is-valid\": [ "error",
+      {
+    		"components": ["Link"],
+    		"specialLink": ["to"],
+    		"aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ]
+  }
+}
+```
